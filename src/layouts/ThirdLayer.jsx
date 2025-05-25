@@ -75,7 +75,7 @@ const duplicated = [...headshots, ...headshots, ...headshots, ...headshots, ...h
             </p>
           </div>
           <div>
-            <img src={Img1} className="md:h-[69px] h-[37px] w-[99px] md:w-[64px] " alt="" />
+            <img src={Img1} className="md:h-[69px] h-[40px] w-[99px] md:w-[64px] " alt="" />
           </div>
         </div>
 

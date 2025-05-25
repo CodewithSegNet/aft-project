@@ -62,6 +62,7 @@ const FourthLayer = () => {
             <img
               src={images[getPrevIndex()]}
               alt="Previous Thumbnail"
+              loading="lazy"
               className="w-[201px] max-h-[230px]  object-cover rounded"
             />
           </div>
@@ -79,10 +80,10 @@ const FourthLayer = () => {
           </div>
 
             <button onClick={prevImage}>
-              <img src={LeftArrow} alt="Previous" className="w-9 h-9" />
+              <img src={LeftArrow}   loading="lazy" alt="Previous" className="w-9 h-9" />
             </button>
             <button onClick={nextImage}>
-              <img src={RightArrow} alt="Next" className="w-9 h-9" />
+              <img src={RightArrow}   loading="lazy" alt="Next" className="w-9 h-9" />
             </button>
           </div>
         </div>
@@ -106,6 +107,7 @@ const FourthLayer = () => {
                 initial="enter"
                 animate="center"
                 exit="exit"
+                loading="lazy"
                 transition={{ duration: 0.5 }}
                 className="w-[401px] h-[382px] object-cover rounded-[12.41px]"
               />
@@ -131,6 +133,7 @@ const FourthLayer = () => {
             <img
               src={images[getNextIndex()]}
               alt="Next Thumbnail"
+              loading="lazy"
               className="w-[201px] max-h-[250px] object-cover rounded"
             />
           </div>
