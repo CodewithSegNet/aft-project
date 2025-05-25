@@ -127,7 +127,7 @@ const FourthLayer = () => {
 
         {/* Right Thumbnail */}
         <div className="hidden lg:flex flex-col h-auto justify-between items-center">
-            <div className="mb-4">
+            <div className="mb-4 list-none">
             <img
               src={images[getNextIndex()]}
               alt="Next Thumbnail"
