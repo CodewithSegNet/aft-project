@@ -73,7 +73,7 @@ const HomePage = () => {
   </div>
 
 
-<div className="px-4 md:px-6 bg-[rgba(0,42,40,1)] ">
+<div className=" bg-[rgba(0,42,40,1)] ">
 <ThirdLayer/>
 </div>
 

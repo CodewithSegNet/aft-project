@@ -45,7 +45,8 @@ const FourthLayer = () => {
 
   return (
     <motion.section className="max-w-screen-2xl mx-auto my-[40px] md:my-[76px]">
-      <div className="max-w-[669px] px-4 md:pl-[27px] pb-[46px]">
+      <div className="px-4 md:px-6">
+      <div className="max-w-[669px] md:pl-[27px] pb-[46px]">
         <h2 className="text-[42px] text-primary md:text-[64px] pb-[8px] leading-[50px] md:leading-[70px] font-normal">
           How The AftA App Works
         </h2>
@@ -54,6 +55,8 @@ const FourthLayer = () => {
           trending conversations, and stay in the loop effortlessly.
         </p>
       </div>
+      </div>
+
 
       <div className="flex flex-col md:flex-row justify-center gap-8 overflow-hidden px-4 md:px-0 relative">
         {/* Left Thumbnail and Arrows */}

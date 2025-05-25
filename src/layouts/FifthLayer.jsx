@@ -33,7 +33,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl mx-auto my-12 px-4">
+    <section className="max-w-screen-2xl mx-auto my-12">
       <div className="max-w-[669px] md:pl-[27px] pb-[46px]">
         <h2 className="text-[42px] text-primary md:text-[64px] pb-[8px] leading-[50px] md:leading-[70px] font-normal">
           Frequently Asked Questions
