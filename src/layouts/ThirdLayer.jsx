@@ -51,6 +51,11 @@ const ThirdLayer = () => {
     ]
   };
 
+
+const headshots = [Img2, Img3, Img4, Img5];
+
+const duplicated = [...headshots, ...headshots, ...headshots, ...headshots, ...headshots, ...headshots, ...headshots];
+
   return (
     <motion.section 
       ref={ref}
@@ -70,12 +75,12 @@ const ThirdLayer = () => {
             </p>
           </div>
           <div>
-            <img src={Img1} className="h-[69px] w-[200px] md:w-[64px] " alt="" />
+            <img src={Img1} className="md:h-[69px] h-[37px] w-[99px] md:w-[64px] " alt="" />
           </div>
         </div>
 
         {/* Carousel */}
-        <div className="mt-2">
+        <div className="block md:hidden mt-2">
           <Slider {...settings}>
             {[Img2, Img3, Img4, Img5].map((img, i) => (
               <div key={i} className="px-2">
@@ -84,6 +89,24 @@ const ThirdLayer = () => {
             ))}
           </Slider>
         </div>
+
+
+          <div className="hidden md:block overflow-hidden w-full py-6">
+      <div className="flex w-fit animate-scroll">
+        {duplicated.map((img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden shrink-0  mx-[10px] md:mx-[10px]"
+          >
+            <img
+              src={img}
+              alt={`Headshot ${index}`}
+              className="w-[393px] h-[798px] object-cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
       </div>
     </motion.section>
   );

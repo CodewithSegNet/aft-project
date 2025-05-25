@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import Img1 from "../assets/slide1.png";
-import Img2 from "../assets/slide2.png";
-import Img3 from "../assets/slide3.png";
+import Img1 from "../assets/slide1.webp";
+import Img2 from "../assets/slide2.webp";
+import Img3 from "../assets/slide3.webp";
 import LeftArrow from "../assets/arrowleft.png";
 import RightArrow from "../assets/arrowright.png";
 
@@ -57,12 +57,12 @@ const FourthLayer = () => {
 
       <div className="flex flex-col md:flex-row justify-center gap-8 overflow-hidden px-4 md:px-0 relative">
         {/* Left Thumbnail and Arrows */}
-        <div className="flex flex-col h-auto justify-between  items-center">
+        <div className="flex flex-col h-auto justify-between items-center">
           <div className="hidden lg:flex mb-4">
             <img
               src={images[getPrevIndex()]}
               alt="Previous Thumbnail"
-              className="max-w-[201px] max-h-[230px]  object-cover rounded"
+              className="w-[201px] max-h-[230px]  object-cover rounded"
             />
           </div>
           <div className="flex items-center justify-end w-full gap-2">
@@ -131,7 +131,7 @@ const FourthLayer = () => {
             <img
               src={images[getNextIndex()]}
               alt="Next Thumbnail"
-              className="max-w-[201px] max-h-[230px] object-cover rounded"
+              className="w-[201px] max-h-[250px] object-cover rounded"
             />
           </div>
           <div>

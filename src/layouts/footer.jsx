@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
 
-<div className="lg:mx-auto max-w-screen-xl lg:px-0 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[50px] lg:gap-[64px] mb-5 lg:mb-[0px] text-white">
+<div className="lg:mx-auto max-w-screen-xl lg:px-0 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[50px] lg:gap-[64px] mb-5 lg:mb-[0px] !pr-[0] lg:!pr-[10rem] text-white">
 
 
         {/* Foundation Links */}
@@ -76,12 +76,7 @@ const Footer = () => {
         {/* Foundation Links */}
         <div>
           <ul className="text-sm font-medium">
-            <li className="group">
-              <Link to="#" className="block mb-4 lg:mb-2 group-hover:bg-text-gradient2 group-hover:bg-clip-text group-hover:text-transparent transition-all">Who we are</Link>
-            </li>
-            <li className="group">
-              <Link to="#" className="block mb-4 lg:mb-2 group-hover:bg-text-gradient2 group-hover:bg-clip-text group-hover:text-transparent transition-all">About us</Link>
-            </li>
+       
             <li className="group">
               <Link to="#" className="block mb-4 lg:mb-2 group-hover:bg-text-gradient2 group-hover:bg-clip-text group-hover:text-transparent transition-all">Terms of use</Link>
             </li>
