@@ -11,11 +11,11 @@ const Footer = () => {
   return (
     <section className="bg-[rgba(0,42,40,1)]">
 
-<div className="pt-[70px] px-6 lg:px-[44px] pb-[44px]">
+<div className="max-w-screen-2xl mx-auto pt-[70px] px-6 lg:px-[44px] pb-[44px]">
    {/* Logo & Description */}
         <div className="flex flex-col items-center lg:flex-row w-full lg:justify-between lg:pb-[70px] lg:items-start">
       
-      <div className="flex flex-col justify-center items-center md:items-left  mb-[40px] lg:mb-[0]">
+      <div className="flex flex-col justify-center md:items-start items-center md:items-left  mb-[40px] lg:mb-[0]">
           <Link to="/" className="text-2xl font-bold flex items-center mb-[25px] lg:mb-[44px]">
             <img
               src={Logo}
@@ -30,24 +30,13 @@ const Footer = () => {
     rounded-[90px]
     text-white text-sm font-normal
     bg-[rgba(20,80,72,1)]
+    hover:bg-black
     transition-all duration-300
     overflow-hidden
     relative
   "
 >
-  {/* Gradient Background Overlay */}
-  <span
-    className="
-      absolute inset-0
-      bg-gradient-to-r
-      from-[rgba(255,180,27,1)] via-[rgba(255,180,27,1)]/70 to-bg-[rgba(20,80,72,1)]
-      opacity-0
-      group-hover:opacity-100
-      transition-opacity duration-300
-      rounded-[90px]
-      z-0
-    "
-  />
+
   
   {/* Content on top */}
   <span className="relative flex items-center z-10">

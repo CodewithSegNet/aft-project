@@ -70,7 +70,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-[40px] lg:pr-[1.3rem] 2xl:pr-[5rem]">
+          <div className="hidden lg:flex items-center ml-[4rem] gap-[40px] lg:pr-[1.3rem] 2xl:pr-[5rem]">
          <NavLink
   to="/about"
   className={({ isActive }) =>
@@ -150,30 +150,18 @@ Privacy
     rounded-[90px]
     text-white text-sm font-normal
     bg-[rgba(20,80,72,1)]
+    hover:bg-black
     transition-all duration-300
     overflow-hidden
-    relative
   "
 >
-  {/* Gradient Background Overlay */}
-  <span
-    className="
-      absolute inset-0
-      bg-gradient-to-r
-      from-[rgba(255,180,27,1)] via-[rgba(255,180,27,1)]/70 to-bg-[rgba(20,80,72,1)]
-      opacity-0
-      group-hover:opacity-100
-      transition-opacity duration-300
-      rounded-[90px]
-      z-0
-    "
-  />
+
   
   {/* Content on top */}
   <span className="relative hidden lg:flex items-center z-10">
     <img
       src={Download}
-      className="h-5 w-6 pr-2 transition-all duration-300 group-hover:brightness-110"
+      className="h-5 w-6 pr-2 transition-all duration-300"
       alt="Download"
     />
     Get The App Now
@@ -188,7 +176,7 @@ Privacy
 
         {/* Mobile Menu */}
         <div
-className={`lg:hidden fixed top-0 left-0 h-screen w-3/4 z-[60] bg-mobile-drawer-gradient backdrop-blur-md shadow-md transform transition-transform duration-300 ${
+className={`lg:hidden fixed top-0 left-0 h-screen w-3/4 z-[60]  bg-gradient-to-r from-white/80 to-white/60 backdrop-blur-md shadow-md transform transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -285,30 +273,19 @@ Privacy
     rounded-[90px]
     text-white text-sm font-normal
     bg-[rgba(20,80,72,1)]
+    hover:bg-black
     transition-all duration-300
     overflow-hidden
     relative
   "
 >
-  {/* Gradient Background Overlay */}
-  <span
-    className="
-      absolute inset-0
-      bg-gradient-to-r
-      from-[rgba(255,180,27,1)] via-[rgba(255,180,27,1)]/70 to-bg-[rgba(20,80,72,1)]
-      opacity-0
-      group-hover:opacity-100
-      transition-opacity duration-300
-      rounded-[90px]
-      z-0
-    "
-  />
+
   
   {/* Content on top */}
   <span className="relative flex items-center z-10">
     <img
       src={Download}
-      className="h-5 w-6 pr-2 transition-all duration-300 group-hover:brightness-110"
+      className="h-5 w-6 pr-2 transition-all duration-300"
       alt="Download"
     />
     Get The App Now

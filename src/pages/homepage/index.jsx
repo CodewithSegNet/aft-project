@@ -1,32 +1,35 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "../../layouts/Navbar";
 import Footer from "../../layouts/footer";
-import Firstpage from "../../layouts/FirstLayer" 
+import FirstLayer from "../../layouts/FirstLayer" 
+import SecondLayer from "../../layouts/SecondLayer" 
+import ThirdLayer from "../../layouts/ThirdLayer"
+import FourthLayer from "../../layouts/FourthLayer"
 
-
+import FifthLayer from "../../layouts/FifthLayer"
 
 
 const HomePage = () => {
   return (
     <>
       <HelmetProvider>
-        <Helmet>
-  <title>AftA – African Dating App for Love Within and Beyond</title>
+<Helmet>
+  <title>AftA – Africa’s Social Media Platform for Connection, Culture, and Community</title>
   <meta
     name="description"
-    content="AftA is the ultimate African dating app connecting singles across the continent and around the world. Find love, friendship, and meaningful relationships rooted in African culture."
+    content="Join AftA – the social media platform made for Africa, Africans, and the diaspora. Share moments, connect with people, and celebrate African culture globally."
   />
   <meta
     name="keywords"
-    content="African dating app, AftA, dating in Africa, African singles, love in Africa, diaspora dating, African relationships, find love, African matchmaking"
+    content="African social media, AftA app, social network for Africa, Africa’s social platform, connect Africans, African diaspora, African culture online, Afrocentric app, pan-African community"
   />
   <meta
     property="og:title"
-    content="AftA – Connect with African Singles Worldwide"
+    content="AftA – Africa’s Social Network for Global Connection"
   />
   <meta
     property="og:description"
-    content="Looking for love in Africa or among the African diaspora? AftA is the dating platform that brings African singles together for genuine connections and lasting relationships."
+    content="Experience social networking reimagined for Africa and its diaspora. AftA connects people, stories, and culture – all in one platform built for Africans worldwide."
   />
   <meta
     property="og:url"
@@ -38,11 +41,11 @@ const HomePage = () => {
   />
   <meta
     name="twitter:title"
-    content="AftA – The #1 Dating App for African Singles"
+    content="AftA – Connect Africans Worldwide Through Social Media"
   />
   <meta
     name="twitter:description"
-    content="Join AftA to meet and date African singles near you or around the world. Safe, fun, and culturally rooted dating for Africans and the diaspora."
+    content="Celebrate African identity and unity through AftA – the social media app designed for Africans and the diaspora to share, connect, and thrive."
   />
   <meta
     name="twitter:image"
@@ -52,6 +55,7 @@ const HomePage = () => {
   <link rel="canonical" href="https://www.afta.com" />
 </Helmet>
 
+
         <div>
 
           <div  className="mx-4 md:mx-6 md:mt-[8rem] lg:mt-[1rem] pb-[7rem] lg:pb-[8rem]">
@@ -59,37 +63,33 @@ const HomePage = () => {
           </div>
   
   <div className="md:pt-[22rem] lg:pt-[0rem]">
-  <Firstpage/>
+  <FirstLayer/>
   </div>
 
 
 
   <div className="mx-4 md:mx-6">
-{/* <Categorypage/> */}
+<SecondLayer/>
   </div>
 
 
-<div className="mx-4 md:mx-6 ">
-{/* <Thirdpage/> */}
+<div className="px-4 md:px-6 bg-[rgba(0,42,40,1)] ">
+<ThirdLayer/>
 </div>
 
+
+<div className="mt-[1rem]">
+<FourthLayer/>
+</div>
 
 
 <div className="mx-4 md:mx-6 mt-[2rem]">
-{/* <DonateCard/> */}
+<FifthLayer/>
 </div>
 
-<div className="mt-[1rem]">
-{/* <Fifthpage/> */}
-</div>
 
-<div className="mx-4 md:mx-6 mt-[2rem] lg:mt-[4rem]">
-{/* <Sixthpage/> */}
-</div>
 
-  <div className="mt-[1rem]">
-    {/* <Sectionpage/> */}
-  </div>
+
 
 
 <div className="">

@@ -32,7 +32,7 @@ export default {
             backgroundImage: {
         'text-gradient': 'linear-gradient(90deg, rgba(255, 180, 27, 1) 30%, rgba(0, 42, 40, 1) 70%)',
         'text-gradient2': 'linear-gradient(90deg, rgba(255, 180, 27, 1) 10%, rgba(255,255,255,1) 90%)',
-        'mobile-drawer-gradient': 'linear-gradient(90deg, rgba(0, 42, 40, 0.6) 35%,  rgba(255, 180, 27, 0.6) 65%)',
+'mobile-drawer-gradient': 'linear-gradient(90deg, rgba(0, 42, 40, 0.6), rgba(0, 42, 40, 0.3))',
       },
     
       boxShadow: {

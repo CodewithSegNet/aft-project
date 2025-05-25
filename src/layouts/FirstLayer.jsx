@@ -80,6 +80,16 @@ const FirstLayer = () => {
         {/* Image Section */}
         <motion.div className="flex-1 relative" variants={childVariants}>
           {/* Main Static App Image */}
+
+                    {/* Img2 - Float effect */}
+          <motion.img
+            src={Img2}
+            alt="Story Tray"
+            className="w-[600px] h-auto object-contain lg:absolute top-[17px] lg:left-[-370px]"
+            variants={childVariants}
+            animate={float}
+          />
+
           <motion.img
             src={Img1}
             alt="Main App"
@@ -99,14 +109,6 @@ const FirstLayer = () => {
           />
 
 
-          {/* Img2 - Float effect */}
-          <motion.img
-            src={Img2}
-            alt="Story Tray"
-            className="w-[1000px] h-auto object-contain absolute top-[17px] lg:left-[-390px]"
-            variants={childVariants}
-            animate={float}
-          />
 
           {/* Img3 - Pulse */}
        <motion.img
